@@ -5,20 +5,20 @@
 class Astrocloud < Formula
   desc "To build and run Airflow DAGs locally, deploy DAGs to the Astronomer Cloud and interact with the Astronomer API."
   homepage "https://astronomer.io"
-  version "0.4.0"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://go-releaser-astro-cloud.s3.amazonaws.com/releases/v0.4.0/cloud-cli_0.4.0_Darwin_arm64.tar.gz"
-      sha256 "849dbf1b22490cfc281ba4ef25b2522d8f81baafbd4b7f4c15e1d1de0b2cb445"
+      url "https://go-releaser-astro-cloud.s3.amazonaws.com/releases/v0.5.0/cloud-cli_0.5.0_Darwin_arm64.tar.gz"
+      sha256 "175d17d9ed629af34a0b51cf2d3d24fbe8e5d333e2f1820ced8e925f0085a34e"
 
       def install
         bin.install "astrocloud"
       end
     end
     if Hardware::CPU.intel?
-      url "https://go-releaser-astro-cloud.s3.amazonaws.com/releases/v0.4.0/cloud-cli_0.4.0_Darwin_x86_64.tar.gz"
-      sha256 "2a6e559d9359d4d4c23c3b8de2459cef51b6b7f9c3ad78d73d675b903c44f0b4"
+      url "https://go-releaser-astro-cloud.s3.amazonaws.com/releases/v0.5.0/cloud-cli_0.5.0_Darwin_x86_64.tar.gz"
+      sha256 "3921db996d0b7aaa843748c2dfea81fda6fdc21e530c44d7628ebf2b618a2ca2"
 
       def install
         bin.install "astrocloud"
@@ -28,16 +28,16 @@ class Astrocloud < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://go-releaser-astro-cloud.s3.amazonaws.com/releases/v0.4.0/cloud-cli_0.4.0_Linux_arm64.tar.gz"
-      sha256 "e1976bbfceb627baac8c842c673759497b0facc92ad4747e9f0f7daeea5d69d5"
+      url "https://go-releaser-astro-cloud.s3.amazonaws.com/releases/v0.5.0/cloud-cli_0.5.0_Linux_arm64.tar.gz"
+      sha256 "109ec29354c995fef4ce24cc602427f71cc45548a6712b048c717755ffbb4e61"
 
       def install
         bin.install "astrocloud"
       end
     end
     if Hardware::CPU.intel?
-      url "https://go-releaser-astro-cloud.s3.amazonaws.com/releases/v0.4.0/cloud-cli_0.4.0_Linux_x86_64.tar.gz"
-      sha256 "58c885107feaa1ab37f8b804e3c811173cd5954a2fe14d27b5207b35d108e27f"
+      url "https://go-releaser-astro-cloud.s3.amazonaws.com/releases/v0.5.0/cloud-cli_0.5.0_Linux_x86_64.tar.gz"
+      sha256 "c11885d54b49e6559d822a773da5053eb6ed22ae3da9741e3fa9e283373d89e2"
 
       def install
         bin.install "astrocloud"
