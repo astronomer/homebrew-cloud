@@ -6,8 +6,8 @@ class AstrocloudAT001Alpha < Formula
   desc "To build and run Airflow DAGs locally, deploy DAGs to the Astronomer Cloud and interact with the Astronomer API."
   homepage "https://astronomer.io"
   version "0.0.1-alpha"
-
-on_macos do
+  
+  on_macos do
     if Hardware::CPU.arm?
       url "https://goreleaserdev.blob.core.windows.net/goreleaser-test-container/releases/v0.14.0/cloud-cli_0.14.0_Darwin_arm64.tar.gz"
       sha256 "3ef4fd48b2ec7c899082f1eb1152832de7a6f1d4e362938df30986fb078a66f8"
