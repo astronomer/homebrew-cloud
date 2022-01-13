@@ -5,7 +5,7 @@
 class Astrocloud < Formula
   desc "To build and run Airflow DAGs locally, deploy DAGs to the Astronomer Cloud and interact with the Astronomer API."
   homepage "https://astronomer.io"
-  version "0.0.1-dev"
+  version "0.0.1-alpha"
 
   on_macos do
     if Hardware::CPU.arm?
