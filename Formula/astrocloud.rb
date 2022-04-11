@@ -5,20 +5,20 @@
 class Astrocloud < Formula
   desc "To build and run Airflow DAGs locally, deploy DAGs to the Astronomer Cloud and interact with the Astronomer API."
   homepage "https://astronomer.io"
-  version "1.3.3"
+  version "1.3.4"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://goreleaserdev.blob.core.windows.net/goreleaser-test-container/releases/v1.3.3/cloud-cli_1.3.3_Darwin_arm64.tar.gz"
-      sha256 "3b37d939525fa960f753ccbdc6384c265116f1cc477ae7e06c8a231c5f4f2a88"
+      url "https://goreleaserdev.blob.core.windows.net/goreleaser-test-container/releases/v1.3.4/cloud-cli_1.3.4_Darwin_arm64.tar.gz"
+      sha256 "9257b25577b8e74a9105d9ecade9123bd2e130f7c00d4013fc85b3caf169df85"
 
       def install
         bin.install "astrocloud"
       end
     end
     if Hardware::CPU.intel?
-      url "https://goreleaserdev.blob.core.windows.net/goreleaser-test-container/releases/v1.3.3/cloud-cli_1.3.3_Darwin_x86_64.tar.gz"
-      sha256 "0b4bb310591e445d94d5e0273ffd82dce668879c1aa6a81db9cd74b76f8a043d"
+      url "https://goreleaserdev.blob.core.windows.net/goreleaser-test-container/releases/v1.3.4/cloud-cli_1.3.4_Darwin_x86_64.tar.gz"
+      sha256 "8fa291e7c53e851560686bc4d60989fb4063cfbfd293da5a29fb9bd0879e0a1e"
 
       def install
         bin.install "astrocloud"
@@ -28,16 +28,16 @@ class Astrocloud < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://goreleaserdev.blob.core.windows.net/goreleaser-test-container/releases/v1.3.3/cloud-cli_1.3.3_Linux_arm64.tar.gz"
-      sha256 "9d9e754a55ce295d5e1752d659bab725183a6cde941891a5b2e39e62ab6a3e4b"
+      url "https://goreleaserdev.blob.core.windows.net/goreleaser-test-container/releases/v1.3.4/cloud-cli_1.3.4_Linux_arm64.tar.gz"
+      sha256 "64501d5e43008b9c23fc80d0fa9ecd2c1adc36f0e51704105229302789995ba2"
 
       def install
         bin.install "astrocloud"
       end
     end
     if Hardware::CPU.intel?
-      url "https://goreleaserdev.blob.core.windows.net/goreleaser-test-container/releases/v1.3.3/cloud-cli_1.3.3_Linux_x86_64.tar.gz"
-      sha256 "f416a8287d7e8140b03d955369dd5ea26aff2851192bb85f76753c0dc4fa3adf"
+      url "https://goreleaserdev.blob.core.windows.net/goreleaser-test-container/releases/v1.3.4/cloud-cli_1.3.4_Linux_x86_64.tar.gz"
+      sha256 "52f95aea910cc6c31dc2109e103b667e144b56c6d00436ff0b343a0dc40df9d2"
 
       def install
         bin.install "astrocloud"
